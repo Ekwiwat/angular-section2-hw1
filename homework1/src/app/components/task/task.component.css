@@ -1,0 +1,34 @@
+.task-container {
+    display: flex;
+    width: 470px;
+    justify-content: center;
+    align-items: center;
+}
+.li-style {
+    width: 350px;
+    background: #edebec;
+    margin: 5px;
+    margin-right: 0px;
+    padding: 10px; 
+    border-left: 4px solid #06007e;
+    list-style: none;
+    color: #06007e;
+    
+}
+.selected {
+    background: #06007e;
+    color: #edebec;
+
+}
+
+
+span {
+    float: right;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(179, 20, 20);
+    border-right: 4px solid #06007e;
+    background: #edebec;
+   margin-left: 0px;
+}

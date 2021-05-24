@@ -1,0 +1,10 @@
+span {
+    float: right;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(179, 20, 20);
+    border-right: 4px solid #06007e;
+    background: #edebec;
+   margin-left: 0px;
+}

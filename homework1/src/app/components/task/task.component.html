@@ -1,0 +1,11 @@
+<div class="task-container">
+    <ul>
+        <li (click)="select()" class="li-style" [class.selected]="isSelected">{{task.name}}
+            <!-- Add Delete function -->
+        </li>
+    </ul>
+    <span class="delTask" (click)="delClick()" [class.selected]="isSelected">
+        <fa-icon [icon]="faTrashAlt"></fa-icon>
+    </span>
+
+</div>

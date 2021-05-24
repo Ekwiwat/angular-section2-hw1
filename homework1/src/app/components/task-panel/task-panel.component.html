@@ -1,0 +1,5 @@
+<div (click)="select()">
+    <app-task (OnSelected)="selectedTask()" *ngFor=" let task of tasks" [task]="task" (OnDelClick)="delTask(task)">
+        <div class="panel"></div>
+    </app-task>
+</div>

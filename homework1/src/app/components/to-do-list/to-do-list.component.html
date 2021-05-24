@@ -1,0 +1,41 @@
+<div class="todo-container">
+    <h1>My Task Today</h1>
+    <p>{{today | date}}</p>
+    <div class="task">
+        <app-task (OnSelected)="selectedTask($event)" *ngFor=" let task of tasks" [task]="task"
+            (OnDelClick)="delTask(task)">
+        </app-task>
+
+    </div>
+
+    <div class=" form-control">
+        <h2>Add Task</h2>
+        <form action="">
+            <div class="form-task">
+                <label for="nameInp">Name:</label>
+                <input type="text" placeholder="Add your task" name="nameInp" id="nameInp" [(ngModel)]="nameInp">
+            </div>
+            <div class="form-task">
+                <label for="descriptionInp">Description:</label>
+                <input type="text" placeholder="Add description" name="descriptionInp" id="descriptionInp"
+                    [(ngModel)]="descriptionInp">
+            </div>
+
+        </form>
+
+        <button class="add-task" (click)="addTask(nameInp,descriptionInp)">
+            Add
+        </button>
+
+    </div>
+    <div class="show-desc">
+        <div class="desc-wrap" [hidden]="isShow">
+            <h2>Task: {{title}}</h2>
+            <p>Description: {{desc}}</p>
+        </div>
+    </div>
+
+    <!-- <div class="alert" *ngIf="toDo.includes(task)">"{{task}}" added</div> -->
+    <!-- (OnSlected)="selectedTask($event) -->
+    <!--  -->
+</div>
